@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
 
 img{
-    width: 68%;
+    width: 100%;
     margin: 0px;
+}
+.imgIn{
+    width: 9%;
 }
 .logo-name{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    
 }
-.name{
+.name h1{
     width: 334px;
     font-family: 'Spartan';
-font-style: normal;
-font-weight: 400;
-font-size: 80px;
-line-height: 90px;
-letter-spacing: 2px;
+    font-size: 80px;
+    letter-spacing: 2px;
+    width: 139px;
+    color: #FFFFFF;
 
 color: #FFFFFF;
 }
@@ -36,13 +39,16 @@ line-height: 40px;
 letter-spacing: 2px;
 
 color: #FFFFFF;
+cursor: pointer;
 }
 .header{
     display: flex;
     margin-top: 0px;
-    justify-content: space-between;
     align-items: center;
-    height: 120px;
+    align-items: baseline;
+    align-content: stretch;
+    justify-content: space-between;
+    height: 108px;
 }
 ul li{
     display: inline;
@@ -53,3 +59,4 @@ ul li{
     width: 1500px;
     margin: 0 auto;
 }
+
