@@ -5,11 +5,15 @@ img{
     margin: 0px;
 }
 .imgIn{
-    width: 9%;
+    width: 24%;
+    display: flex;
+    align-content: stretch;
+    height: 102px;
 }
 .logo-name{
     display: flex;
-    align-items: flex-end;
+    lign-items: baseline;
+    align-content: space-around;
     
 }
 .name h1{
@@ -48,7 +52,7 @@ cursor: pointer;
     align-items: baseline;
     align-content: stretch;
     justify-content: space-between;
-    height: 108px;
+    height: 140px;
 }
 ul li{
     display: inline;

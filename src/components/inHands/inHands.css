@@ -1,103 +1,39 @@
-/* .cont{
-    width: 1500px;
-    margin: 0 auto;
-    margin-bottom: 10%;
-} */
-.lineFlex{
+.containerr {
     display: flex;
-}
-.pic1{
-    background-image: url(https://images.unian.net/photos/2019_07/thumb_files/800_0_1564475193-5651.png?0.660646832275527);
-    width: 700px;
-    height: 500px;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+    color: white;
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+  }
+  
+  .box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
     filter: grayscale(100);
-    background-size: cover;
-    transition: all 0.7s;
-
-}
-.pic1:hover{
-    background-image: url(https://ar.culture.ru/attachments/attachment/preview/5def8057f602b00fd7e2db0e-preview.jpg);
-    filter: grayscale(0);
-    background-size: cover;
-}
-
-.pic2{
-    background-image: url(https://455811.selcdn.ru/newsbel/uploads/2020/12/newsbel.by-8.12.2020-pLhowX3muMsUsUUvHurj69mABGbraVq1.jpg);
-    width: 700px;
-    height: 500px;
-    filter: grayscale(100);
-    background-size: cover;
-    transition: all 0.7s ease-in;
-    
-}
-.pic2:hover{
-    background-image: url(https://www.smt-samara.ru/upload/iblock/414/414e1a8cce92b5b93e15952a7cbb7957.JPG);
-    filter: grayscale(0);
-    background-size: cover;
-}
-
-.pic3{
-    background-image: url(https://ecoportal.info/wp-content/uploads/2016/09/zagriaznenie-vodi.jpg);
-    width: 700px;
-    height: 500px;
-    filter: grayscale(100);
-    background-size: cover;
-    transition: all 0.7s ease-in;
-    
-}
-.pic3:hover{
-    background-image: url(https://faktoved.ru/wp-content/uploads/fakti-o-podvodnom-mire.jpg);
-    filter: grayscale(0);
-    background-size: cover;
-}
-
-
-.pic4{
-    background-image: url(https://golden-monkey.ru/u/notes/Syria/damage/Syria-damage-Deir%20Ezzor.jpg);
-    width: 700px;
-    height: 500px;
-    filter: grayscale(100);
-    background-size: cover;
-    transition: all 0.7s ease-in;
-    
-}
-.pic4:hover{
-    background-image: url(https://eatravel.kz/wp-content/uploads/2019/12/Georgia.jpg);
-    filter: grayscale(0);
-    background-size: cover;
-}
-
-
-.pic5{
-    background-image: url(https://bigpicture.ru/wp-content/uploads/2012/05/poaching_019.jpg);
-    width: 700px;
-    height: 500px;
-    filter: grayscale(100);
-    background-size: cover;
-    transition: all 0.7s ease-in;
-    
-}
-.pic5:hover{
-    background-image: url(https://image.wallperz.com/thumbs/wallperz.com_thumbs_70i6290nbhfhijmbruzodu01gz2m5z.jpg);
-    filter: grayscale(0);
-    background-size: cover;
-    
-}
-
-.pic6{
-    background-image: url(https://img.championat.com/c/900x900/news/big/h/z/trenera-sbornoj-rossii-obvinili-v-rasizme_15651824601780640809.jpg);
-    width: 700px;
-    height: 500px;
-    filter: grayscale(100);
-    background-size: cover;
-
-    transition: all 0.7s ease-in;
-    
-    
-}
-.pic6:hover{
-    background-image: url(https://www.bcvs.org.uk/sites/default/files/inline-images/free%20%28940%20%C3%97%20600%20px%29.jpg);
-    filter: grayscale(0);
-    background-size: cover;
-    
-}
+  }
+  
+  .box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  
+  .box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
