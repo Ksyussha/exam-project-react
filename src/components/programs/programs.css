@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Source+Sans+Pro:200,300,400,600');
+
+.body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-size: 22px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.wrapper >*{
+    margin: 5px;
+}
+.media {
+    width: 450px;
+    height: 323px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media img {
+    max-width: 100%;
+    height: auto;
+  }
+.btn{
+    padding: 10px;
+    border: 1px solid black;
+}
+.layer {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    width: 10px;
+    height: 90%;
+    text-align: center;
+    background: #FFF;
+    color: #151E3F;
+    transition: all 0.9s ease;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  
+}
+.layer h1 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 79%;
+    font-family: 'Inconsolata', monospace;
+
+  }
+
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  
+}
+
+
+@media (max-width: 800px){
+  body {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+    display: block;
+    
+  }
+  .wrapper > * {
+    margin: 10px;
+  }
+}

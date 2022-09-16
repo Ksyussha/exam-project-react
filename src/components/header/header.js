@@ -2,8 +2,18 @@ import { Component } from 'react';
 import './header.css';
 import logo from '../images/logo (3).png';
 import logo2 from '../images/logo.png';
+import About from '../aboutUs/aboutUs';
+import Programs from '../programs/programs'
+import Donation from '../donation/donation'
 
 class Header extends Component {
+    constructor(props){
+        super(props)
+        this.handleMenu = this.handleMenu.bind(this);
+      }
+      handleMenu({ value, href }) {
+        this.props.handleMenu(value, href);
+      }
     render(){ 
   return (
     <div className='cont'>
@@ -20,14 +30,14 @@ class Header extends Component {
             </div>
             
         </div>
-        <div className='menu'>
-            <ul>
-                <li>about us |</li>
-                <li>programs |</li>
-                <li>donation</li>
-            </ul>
-        </div>
+        
+        
     </div>
+    {/* <div>
+        <About onSubmit={this.handleMenu} />
+        <Programs onSubmit={this.handleMenu} />
+        <Donation onSubmit={this.handleMenu} />
+      </div> */}
     </div>
   );
     }

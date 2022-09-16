@@ -14,6 +14,8 @@ img{
     display: flex;
     lign-items: baseline;
     align-content: space-around;
+    width: 15%;
+    padding-left: 43%;
     
 }
 .name h1{
@@ -29,23 +31,7 @@ color: #FFFFFF;
 .header h1{
     font-family: 'League Spartan', sans-serif;
 }
-.header li{
-    width: 663px;
-height: 42px;
-left: 1257px;
-top: 43px;
-
-font-family: 'League Spartan', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 40px;
-letter-spacing: 2px;
-
-color: #FFFFFF;
-cursor: pointer;
-}
-.header{
+header{
     display: flex;
     margin-top: 0px;
     align-items: center;
@@ -54,13 +40,3 @@ cursor: pointer;
     justify-content: space-between;
     height: 140px;
 }
-ul li{
-    display: inline;
-    margin-right: 5px;
-}
-
-.cont{
-    width: 1500px;
-    margin: 0 auto;
-}
-
