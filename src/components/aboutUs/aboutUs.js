@@ -1,8 +1,7 @@
-import { Component } from 'react';
+
 import './aboutUs.css';
 
-class About extends Component {
-    render(){ 
+const About =()=> {
   return (
 
     <div className='about'>
@@ -15,7 +14,6 @@ life is a boomerang, and we have done everything we could for your convenience, 
     </div>
 
   );
-    }
 }
 
 export default About;

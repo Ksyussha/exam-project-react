@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
 
-img{
-    width: 100%;
-    margin: 0px;
-}
+
 .imgIn{
-    width: 24%;
-    display: flex;
-    align-content: stretch;
-    height: 102px;
+        display: flex;
+        align-content: stretch;
+        height: 102px;
 }
 .logo-name{
     display: flex;

@@ -1,30 +1,41 @@
-import { Component } from 'react';
+
 import './App.css';
 import Donation from './components/donation/donation';
-
 import Header from './components/header/header';
-import Hand from './components/inHands/inHands';
-import Menu from './components/menu/menu';
 import Programs from './components/programs/programs';
-import About from './components/aboutUs/aboutUs';
+
+import Login from './Login';
+import {Route, Routes} from 'react-router-dom'
+import {Link} from 'react-router-dom'
+import Main from './components/main/main';
 
 
-class App extends Component {
-  constructor(props){
-    super(props)
-    
-  }
-  render(){ 
+const App =()=>{
+  
   return( 
     <div>
-  <Header/>
-  <Hand/> 
-  <About/>
-  {/* <Menu site=" "/> */}
-  <Programs/>
-  <Donation/>
+      <div className='two'>
+      <Header/>
+      <ul className='flex'>
+  <li className='lishka'>
+    <Link to="/programs">programs |</Link>
+  </li>
+  <li className='lishka'>
+    <Link to="/login">login |</Link>
+  </li>
+  <li className='lishka'>
+    <Link to="/donation">donation </Link>
+  </li>
+</ul>
+</div>
+
+      <Routes>
+      <Route path="/" element={<Main/> }/>
+      <Route path="/programs" element={<Programs/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/donation" element={<Donation/>}/>
+      </Routes>
   </div>
   )
-  }
 }
 export default App;

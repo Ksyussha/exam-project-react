@@ -1,9 +1,7 @@
-import { Component } from "react"
+
 import './donation.css';
 
-class Donation extends Component {
-    render(){ 
+const Donation =()=> {
   return 
-  }
   }
   export default Donation
