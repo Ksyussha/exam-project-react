@@ -127,6 +127,67 @@ h1 {
   
 }
 
+.modal{
+  position: relative;
+  display: flex;
+  transition: 0.5s;
+  z-index: 2;
+  transform: translate(-10%, 0%);
+  visibility: visible;
+  opacity: 1;
+  }
+  .show {
+    background-color: aqua;
+  }
+
+.forms {
+  width: 363px;
+  height: 496px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: 1/2;
+}
+.center {
+  display: grid;
+  padding-top: 3%;
+}
+input {
+  width: 78%;
+  line-height: 35px;
+  text-align: center;
+  margin: 22px 0px 0px 0px;
+  z-index: 10;
+  border-radius: 5px;
+}
+.sign {
+  padding: 3% 33%;
+  border: #ffffff solid 1px;
+  background-color: black;
+  border-radius: 4%;
+  color: white;
+  font-weight: 700;
+  opacity: 0.8;
+  cursor: pointer;
+  margin-top: 19px;
+  border-radius: 5px;
+}
+.column{
+  
+}
+
+/* .modal_content{
+  padding:20px;
+  border-radius: 12px;
+  background-color: white;
+  transform: scale(0.5);
+  transition: 0.4s all;
+  width: 50vh;
+
+} */
+
 
 @media (max-width: 800px){
   body {
