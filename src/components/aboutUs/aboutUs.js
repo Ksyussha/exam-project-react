@@ -5,7 +5,7 @@ const About =()=> {
   return (
 
     <div className='about'>
-      <div className='photo'></div>
+      <div className='photo1'></div>
     <div className='text'>
         <h1> THIS PROJECT</h1>
         <p> was founded to help those in need, the ecology of our planet. to unite people of different interests to accomplish one big goal.<br></br> 
