@@ -1,11 +1,11 @@
 import "./donation.css";
-import Popup from "../popup/popup";
+import PopupCard from "../popupCard/popupCard";
 import React from "react";
 import { useState } from "react";
 import kids from "../images/kids.jpeg"
 
 const Donation = () => {
-  const [buttonPopup, setButtonPopup] = useState(false);
+  const [buttonPopupCard, setButtonPopupCard] = useState(false);
   return (
     <div>
       <div className="photo">
@@ -53,14 +53,14 @@ const Donation = () => {
           <h2>Select an Amount</h2>
         </div>
         <div className="contCircles">
-          <div className="circleprice" onClick={() => setButtonPopup(true)}>
+          <div className="circleprice" onClick={() => setButtonPopupCard(true)}>
             <h1>$100</h1>
 
 
 
 
 
-            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+            <PopupCard trigger={buttonPopupCard} setTrigger={setButtonPopupCard}>
             <div className="mainscreen">
       <div className="card">
         <div className="leftside">
@@ -93,12 +93,11 @@ const Donation = () => {
             <input type="password" className="inputbox" placeholder="cvv" name="cvv" id="cvv" required />
         </div>
             <p></p>
-            <button type="submit" className="button">CheckOut</button>
           </form>
         </div>
       </div>
     </div>
-</Popup>
+</PopupCard>
 
 
 
@@ -111,22 +110,22 @@ const Donation = () => {
 
 
           </div>
-          <div className="circleprice" onClick={() => setButtonPopup(true)}>
+          <div className="circleprice" onClick={() => setButtonPopupCard(true)}>
             <h1>$150</h1>
           </div>
-          <div className="circleprice" onClick={() => setButtonPopup(true)}>
+          <div className="circleprice" onClick={() => setButtonPopupCard(true)}>
             <h1>$250</h1>
           </div>
-          <div className="circleprice" onClick={() => setButtonPopup(true)}>
+          <div className="circleprice" onClick={() => setButtonPopupCard(true)}>
             <h1>$500</h1>
           </div>
-          <div className="circleprice" onClick={() => setButtonPopup(true)}>
+          <div className="circleprice" onClick={() => setButtonPopupCard(true)}>
             <h1>$1,000</h1>
           </div>
-          <div className="circleprice" onClick={() => setButtonPopup(true)}>
+          <div className="circleprice" onClick={() => setButtonPopupCard(true)}>
             <h1>$5,000</h1>
           </div>
-          <div className="circleprice" onClick={() => setButtonPopup(true)}>
+          <div className="circleprice" onClick={() => setButtonPopupCard(true)}>
             <h1>OTHER</h1>
           </div>
         </div>

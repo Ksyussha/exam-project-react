@@ -1,7 +1,4 @@
 import "./programs.css";
-import dogs from "../images/friends.jpg";
-import trash from "../images/мусор.png";
-import tree from "../images/tree.webp";
 import Popup from "../popup/popup";
 import React from "react";
 import { useState } from "react";
@@ -34,7 +31,7 @@ const Programs = () => {
 </Popup>
         </div>
         <div className="prog prog2">
-        <div class="wrapper">
+        <div className="wrapper">
         <button onClick={()=> setButtonPopup(true)}>click me</button>
 </div>
 <h1>cleaning of garbage</h1>

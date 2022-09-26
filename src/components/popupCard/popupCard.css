@@ -22,13 +22,15 @@
     
 
 } */
-.close-btn {
+.close-btnCard{
     padding: 1% 5%;
     /* font-size: 28px; */
     margin: 0;
     display: flex;
-    width: 641px;
+    width: 529px;
     justify-content: center;
-    margin-top: 344px;
+    margin-top: 736px;
     z-index: 1;
+    margin-left: 398px;
+
 }

@@ -1,14 +1,14 @@
 import React from "react";
-import "./popup.css"
+import "./popupCard.css"
 
-function Popup(props){
+function PopupCard(props){
     return(props.trigger) ? ( 
     <div className="popup">
         <div className="popup-inner">
-        <button className="close-btn" onClick={() => props.setTrigger(false)}> SEND</button>
+        <button className="close-btnCard" onClick={() => props.setTrigger(false)}> Check Out</button>
         {props.children}
         </div>
         </div>
     ) : "";
 }
-export default Popup
+export default PopupCard
